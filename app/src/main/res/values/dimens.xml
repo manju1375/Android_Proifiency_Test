@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- card view dimens -->
+    <dimen name="card_view_margin">5dp</dimen>
+    <dimen name="card_view_corner_radius">3dp</dimen>
+    <dimen name="card_view_elevation">1dp</dimen>
+
+    <!-- constraint layout dimens -->
+    <dimen name="constraint_layout_margin_left">5dp</dimen>
+    <dimen name="constraint_layout_margin_right">5dp</dimen>
+    <dimen name="constraint_layout_margin_bottom">5dp</dimen>
+
+    <!-- constraint layout dimens -->
+    <dimen name="news_item_title_size">24sp</dimen>
+    <dimen name="news_item_desc_size"></dimen>
+    <dimen name="news_main_title_size"></dimen>
+
+    <dimen name="view_gap_width">5dp</dimen>
+</resources>
