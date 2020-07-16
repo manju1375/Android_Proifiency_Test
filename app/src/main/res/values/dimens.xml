@@ -12,7 +12,7 @@
     <dimen name="constraint_layout_margin_bottom">5dp</dimen>
 
     <!-- constraint layout dimens -->
-    <dimen name="news_item_title_size">24sp</dimen>
+    <dimen name="news_item_title_size">20sp</dimen>
     <dimen name="news_item_desc_size"></dimen>
     <dimen name="news_main_title_size"></dimen>
 
