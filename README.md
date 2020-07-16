@@ -1,8 +1,7 @@
-# Retrofit-Kotlin-Example
+#Kotlin-JSON-Parse-Example
 Android Kotlin app to parse JSON data using [Retrofit2](https://github.com/square/retrofit) library with [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/) :blush:
 
 ## Screenshots
-<img src="images/img1.png" width="200"> <img src="images/img2.png" width="200">
 
 ## Libraries used
 * [Retrofit2](https://github.com/square/retrofit) 
@@ -19,9 +18,7 @@ Android Kotlin app to parse JSON data using [Retrofit2](https://github.com/squar
     * `implementation 'io.github.inflationx:viewpump:1.0.0'`
 * [Koin](https://github.com/InsertKoinIO/koin)
     * `implementation 'org.koin:koin-android-viewmodel:1.0.0-RC-1'`
-    
-## API Used
-- [x] [Forismatic](http://forismatic.com/en/api/)
+ 
 
 ## License & Copyright
 Licensed under the [MIT Licence](LICENSE)
