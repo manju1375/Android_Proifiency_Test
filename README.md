@@ -2,7 +2,7 @@
 Android Kotlin app to parse JSON data using [Retrofit2](https://github.com/square/retrofit) library with [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/) :blush:
 
 ## Screenshots
-![github-small](https://user-images.githubusercontent.com/3723978/87681410-44b8aa80-c79c-11ea-9bd6-e85d3e0ac40a.png)
+![image](https://user-images.githubusercontent.com/3723978/87681410-44b8aa80-c79c-11ea-9bd6-e85d3e0ac40a.png 100*200)
 ![image](https://user-images.githubusercontent.com/3723978/87681508-5a2dd480-c79c-11ea-89a6-cbaf88285a55.png)
 ![image](https://user-images.githubusercontent.com/3723978/87681524-5dc15b80-c79c-11ea-9fda-93dd8c6fa3d8.png)
 ## Libraries used
