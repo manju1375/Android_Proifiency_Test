@@ -23,7 +23,7 @@ import kotlinx.android.synthetic.main.layout_main.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     // Lazy Inject ViewModel
     private val viewModel: MainActivityViewModel by viewModel()
@@ -104,5 +104,9 @@ class MainActivity : AppCompatActivity() {
         //**
         itemsrv.layoutManager = mLayoutManager
         itemsrv.setHasFixedSize(true)
+    }
+
+    override fun onResume() {
+        super.onResume()
     }
 }
