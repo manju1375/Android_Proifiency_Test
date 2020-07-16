@@ -6,9 +6,11 @@ import android.os.Bundle
 
 import com.androidtest.samplenewsapp.viewmodel.MainActivityViewModel
 import android.content.Context
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log.i
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 
 
@@ -25,7 +27,8 @@ class MainActivity : AppCompatActivity() {
 
     // Lazy Inject ViewModel
     private val viewModel: MainActivityViewModel by viewModel()
-    var itemsCells: List<RowModel>? = null
+    //var itemsCells: List<RowModel>? = null
+    var itemsCells: MutableList<RowModel>? = mutableListOf()
     lateinit var adapter: NewsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +37,15 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.title = resources.getString(R.string.loading_quote)
         getData(false)
         setRVLayoutManager()
+        itemsswipetorefresh.setProgressBackgroundColorSchemeColor(ContextCompat.getColor(this, R.color.colorPrimary))
+        itemsswipetorefresh.setColorSchemeColors(Color.WHITE)
+
+        itemsswipetorefresh.setOnRefreshListener {
+            itemsCells?.clear()
+            getData(true)
+            itemsswipetorefresh.isRefreshing = false
+        }
+
     }
 
     @SuppressLint("SetTextI18n")

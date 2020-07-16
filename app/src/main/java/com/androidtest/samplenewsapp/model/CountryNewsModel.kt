@@ -10,6 +10,7 @@ class CountryNewsModel {
 
     @SerializedName("rows")
     @Expose
-    val rows: List<RowModel>? = null
+    //val rows: List<RowModel>? = null
+    val  rows: MutableList<RowModel>? = mutableListOf()
 
 }
