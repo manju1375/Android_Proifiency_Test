@@ -31,46 +31,46 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_main)
-
+        supportActionBar?.title = resources.getString(R.string.loading_quote)
         getData(false)
-       /* fab.setOnClickListener{
-            getData(true)
-        }*/
         setRVLayoutManager()
     }
 
     @SuppressLint("SetTextI18n")
-    private fun getData(refresh : Boolean) {
+    private fun getData(refresh: Boolean) {
         viewModel.getNewsData(refresh).observe(this, Observer {
-            if(it == null){
+            if (it == null) {
                 logInfo("Handle Error")
             }
-            if(it?.error == null){
-                if(it?.code==null) {
+            if (it?.error == null) {
+                if (it?.code == null) {
                     val quote: CountryNewsModel? = it!!.posts
+                    supportActionBar?.title = quote?.title
                     itemsCells = quote?.rows
                     setAdapter()
-                }else{
-                    when(it.code!!){
+                } else {
+                    supportActionBar?.title = resources.getString(R.string.error_in_loading)
+                    when (it.code!!) {
                         404 -> toast("Sorry not found! :(")
-                        else ->{
+                        else -> {
                             toast("Error! Please try again..")
                         }
                     }
                 }
-            }else{
-                val e : Throwable = it.error!!
+            } else {
+                supportActionBar?.title = resources.getString(R.string.error_in_loading)
+                val e: Throwable = it.error!!
                 logInfo("Error is " + e.message)
             }
         })
     }
 
-    private fun logInfo(msg: String){
+    private fun logInfo(msg: String) {
         i("MainActivity", msg)
     }
 
-    private fun toast(msg: String){
-        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
+    private fun toast(msg: String) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
     override fun attachBaseContext(newBase: Context) {
