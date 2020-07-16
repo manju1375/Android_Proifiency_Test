@@ -18,9 +18,7 @@ Android Kotlin app to parse JSON data using [Retrofit2](https://github.com/squar
     * `implementation 'io.github.inflationx:viewpump:1.0.0'`
 * [Koin](https://github.com/InsertKoinIO/koin)
     * `implementation 'org.koin:koin-android-viewmodel:1.0.0-RC-1'`
-    
-## API Used
-- [x] [Forismatic](http://forismatic.com/en/api/)
+ 
 
 ## License & Copyright
 Licensed under the [MIT Licence](LICENSE)
