@@ -15,7 +15,6 @@ import com.google.android.material.snackbar.Snackbar
 
 @SuppressLint("Registered")
 open class BaseActivity : AppCompatActivity(), ConnectivityReceiver.ConnectivityReceiverListener {
-    private var mSnackBar: Snackbar? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +24,6 @@ open class BaseActivity : AppCompatActivity(), ConnectivityReceiver.Connectivity
 
 
     private fun showMessage(isConnected: Boolean) {
-
 
 
         if (!isConnected) {
