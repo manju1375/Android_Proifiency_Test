@@ -1,4 +1,4 @@
-# Retrofit-Kotlin-Example
+#Kotlin-JSON-Parse-Example
 Android Kotlin app to parse JSON data using [Retrofit2](https://github.com/square/retrofit) library with [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/) :blush:
 
 ## Screenshots
